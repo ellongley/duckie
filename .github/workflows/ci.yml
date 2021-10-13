@@ -3,9 +3,9 @@
 name: GitHub Actions CI
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_requests:
-    branches: [main]
+    branches: [master]
 
 jobs:
 
@@ -32,7 +32,7 @@ jobs:
         run: |
           pip install flake8
           flake8 --show-source --ignore=F401
-          
+
       - name: Unit tests with pytest
         run: |
           pip install pytest
