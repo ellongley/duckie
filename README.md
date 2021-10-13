@@ -1,1 +1,3 @@
-\includegraphics[]{TKH2C4URE-ULZULM3F0-73853b21850e-192.jpg}
+# Duckie
+
+Code to perform quality tests on ML algorithms. Originally developed for use in Erdos/CMM project.
