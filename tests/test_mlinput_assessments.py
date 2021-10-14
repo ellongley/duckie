@@ -2,7 +2,7 @@
 
 import pandas as pd
 import pytest
-from duckie.mlinput_assessments import TrainTestStratAssessment
+from duckie.mltraining_assessments import TrainTestStratAssessment
 
 
 def test_stratification():

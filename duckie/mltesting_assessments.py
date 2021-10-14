@@ -1,3 +1,5 @@
+# Assessment tasks to run when a ML algorithm is being tested.
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
