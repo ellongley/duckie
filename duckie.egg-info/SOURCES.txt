@@ -1,0 +1,13 @@
+README.md
+setup.py
+duckie/ml.py
+duckie/mldata_assessments.py
+duckie/mltesting_assessments.py
+duckie/mltraining_assessments.py
+duckie/run_assessments.py
+duckie.egg-info/PKG-INFO
+duckie.egg-info/SOURCES.txt
+duckie.egg-info/dependency_links.txt
+duckie.egg-info/not-zip-safe
+duckie.egg-info/requires.txt
+duckie.egg-info/top_level.txt

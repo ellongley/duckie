@@ -1,3 +1,5 @@
+# Assessment tasks to run when a ML algorithm is being trained.
+
 import numpy as np
 import warnings
 import matplotlib.pyplot as plt
@@ -9,7 +11,7 @@ class TrainTestStratAssessment:
     training set for a list of categorical features of the data.
     """
 
-    def __init__(self, train, test, features):
+    def __init__(self, train, test, features, coltype='Feature', datatype='Test'):
         """
         Attributes:
         train (pd.DataFrame): The training data.
@@ -19,6 +21,8 @@ class TrainTestStratAssessment:
         self.train = train
         self.test = test
         self.features = features
+        self.type = type
+        self.datatype = datatype
 
     def assess(self):
         """ Compute the distribution of the class types in the train and test set.
@@ -51,11 +55,11 @@ class TrainTestStratAssessment:
                 feature_type = norm_counts_train.index[ind]
                 print(
                     (f'Training sample is {"{0:.2%}".format(norm_counts_train[feature_type])}\
-                     {feature_type} for feature {feature}.'))
+                     {feature_type} for {self.type} {feature}.'))
             for ind in range(len(norm_counts_test)):
                 feature_type = norm_counts_test.index[ind]
                 print(
-                    (f'Test sample is {"{0:.2%}".format(norm_counts_test[feature_type])}\
-                     {feature_type}: for feature {feature}.'))
+                    (f'{self.datatype} sample is {"{0:.2%}".format(norm_counts_test[feature_type])}\
+                     {feature_type}: for {self.type} {feature}.'))
 
         return norm_counts_train_full, norm_counts_test_full

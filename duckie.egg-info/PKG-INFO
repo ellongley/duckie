@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: duckie
+Version: 0.0.1
+Summary: test machine learning model
+Home-page: github.com/ellongley/duckie
+Author: Emily Phillips Longley
+License: MIT
+Description: # Duckie
+        
+        Code to perform quality tests on ML algorithms. Originally developed for use in Erdos/CMM project.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

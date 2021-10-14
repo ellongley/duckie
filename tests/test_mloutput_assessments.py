@@ -1,7 +1,7 @@
 """ module to test mloutput assessments."""
 
 import numpy as np
-from duckie.mloutput_assessments import ConfusionMatrixAssessment
+from duckie.mltesting_assessments import ConfusionMatrixAssessment
 import os.path
 import pandas as pd
 
